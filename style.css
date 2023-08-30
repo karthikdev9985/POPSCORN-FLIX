@@ -1,0 +1,548 @@
+* {
+    color: white;
+    margin:0;
+}
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: black;
+    width:100vw;
+    overflow-x: scroll;
+}
+
+nav {
+    height: 50px;
+    background-color: black;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.logo {
+    background-image: url("https://res.cloudinary.com/dhshw1ohi/image/upload/v1693330973/images_1_wun5pg.jpg");
+    background-size: contain;
+    width: 100px;
+    height: 60px;
+    background-repeat: no-repeat;
+}
+
+nav * {
+    margin-right: 20px;
+}
+
+
+#genre {
+    background-color: transparent;
+    color: white;
+    border: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+#genre-in {
+    width: 100px;
+    display: none;
+    position: absolute;
+    left: 165px;
+    background-color: rgb(0, 0, 0);
+    top: 35px;
+    margin: 10px;
+    height: 450px;
+    font-size: 10px;
+    z-index: 1000;
+}
+
+ul {
+    width: 60px;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    display: contents;
+}
+
+li {
+    color: red;
+    padding-top: 4px;
+    padding-left: 5px;
+}
+
+a:visited,a {
+    color: red;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: red underline;
+}
+
+#search {
+    background-color: transparent;
+    border: none;
+    caret-color: white;
+    outline: none;
+    height: 100%;
+    width: 147px;
+}
+
+.search {
+    border: 1px solid red;
+    border-radius: 2px;
+    height: 20px;
+    width: 150px;
+    display: flex;
+    position: absolute;
+    right: 70px;
+}
+
+#go {
+    position: relative;
+    left: -15px;
+    color: whitesmoke;
+    background-color: transparent;
+    border: 1px solid;
+    border-radius: 2px;
+}
+header{
+    z-index: 10000000000;
+    position:sticky;
+    top:0px;
+}
+nav a {
+    display: flex;
+    color: white;
+    text-decoration: none;
+}
+
+nav a:visited {
+    display: flex;
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: none;
+    border: inset;
+    border: 1px solid red;
+    border-radius: 3px;
+}
+
+.white {
+    padding: 10px 10px;
+}
+
+#go:hover {
+    color: black;
+    background-color: white;
+}
+
+
+.banner {
+    height: 440px;
+    background-image: url('https://res.cloudinary.com/dhshw1ohi/image/upload/v1693324918/the-avengers-vm16xv4a69smdauy_q94jbe.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.banner h2 {
+    font-size: 50px;
+    margin: 0;
+    z-index: 10;
+    margin-left: 10px;
+
+}
+
+.banner .banner-buttons {
+    z-index: 10;
+    margin-left: 20px;
+}
+
+.banner .banner-buttons button {
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(109, 109, 110, 0.7);
+    border: none;
+    padding: 8px 24px;
+    border-radius: 4px;
+}
+.banner-description {
+    width: 300px;
+    margin-left: 20px;
+}
+.banner .banner-buttons .button-play,
+.fa-play {
+    background-color: whitesmoke;
+    color: black;
+}
+.moviescont {
+    display: flex;
+}
+
+
+
+#originals,
+#top_rated {
+    height: 270px;
+    display: flex;
+    cursor: pointer;
+    overflow-x: scroll;
+}
+.movies-cont {
+    display: flex;
+    cursor: pointer;
+    overflow-x: scroll;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+#originals img:hover,
+#trending img:hover,
+#top_rated img:hover {
+    animation: zoom 200ms linear;
+    animation-fill-mode: forwards;
+}
+
+#trending {
+    height: 170px;
+}
+
+@keyframes zoom {
+    to {
+        z-index: 10000000;
+        margin: 0px;
+    }
+}
+
+.searchIN img {
+    width: 190px;
+    height: 290px;
+    cursor: pointer;
+    border: 1px solid red;
+}
+.search-cont {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+#logo:visited,
+#logo:hover {
+    border: none;
+}
+
+* {
+    scroll-behavior: smooth;
+}
+
+.logo {
+    filter: brightness(19);
+    filter: contrast(100);
+}
+
+.lang {
+    color: red;
+    width: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 270px;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.browlang {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#tel {
+    background-image: url('https://res.cloudinary.com/dhshw1ohi/image/upload/v1693325392/Salaar-KGF-Connection_choujw.jpg');
+    filter: blur(4px);
+    background-size: cover;
+}
+
+#hin {
+    background-image: url('https://res.cloudinary.com/dhshw1ohi/image/upload/v1693325735/War_official_poster_teuhyx.jpg');
+    filter: blur(2px);
+    background-size: cover;
+}
+
+#tam {
+    background-image: url('https://res.cloudinary.com/dhshw1ohi/image/upload/v1693326040/92282228_tdrb29.webp');
+    filter: blur(3px);
+    background-size: cover;
+}
+
+#mal {
+    background-image: url('https://www.themoviedb.org/t/p/w1280/lJ3RvIirE2C7gdBKvPRaoQ3iCo2.jpg');
+    filter: blur(3px);
+    background-size: cover;
+}
+
+#eng {
+    background-image: url('https://res.cloudinary.com/dhshw1ohi/image/upload/v1693326159/small-spos8851-poster-avengers-infinity-war-imax-sl-9359-wall-original-imaghs5nrdas7gbd_hzerga.webp');
+    filter: blur(2px);
+    background-size: cover;
+}
+
+.lang span {
+    position: absolute;
+    z-index: 1000;
+    font-size: larger;
+}
+
+span h2 {
+    font-size: 4vh;
+    color: rgb(255, 255, 255);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.lang:hover {
+    opacity: 80%;
+}
+#genre-in {
+    cursor: pointer;
+}
+a {
+    cursor: pointer;
+}
+
+dialog {
+    background-color: rgb(0, 0, 0);
+    border: 2px solid white;
+    z-index: 10000000;
+    pointer-events: all;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+dialog::backdrop{
+    opacity: 80%;
+    background-color: black;
+    filter: blur(1px);
+}
+dialog[open]{
+    animation: dialog 500ms ease-out;
+}
+
+iframe {
+    border: red;
+}
+
+#x {
+    position: relative;
+    top:-20px;
+    right:-15px;
+    display: block;
+    font-size: 25px;
+    color: red;
+    cursor: pointer;
+    align-self: flex-start;
+    justify-self: flex-end;
+
+}
+#x:hover,
+#x:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@keyframes dialog{
+from{
+    transform:
+    translatey(-110%);
+}
+to{
+    transform:
+    translatey(0%);
+
+}
+}
+#modal{
+    display:none;
+}
+footer{
+    border-top: rgb(255, 255, 255) .15px solid;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 50px;
+    height:60px;
+    background-color: rgb(0, 0, 0);
+}
+.love{
+    font-size: 12px;
+    align-self: center;
+}
+.cpyrgts{
+    font-size: x-small;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+    bottom:34%;
+    margin-left:2px;
+}
+header{
+    position:sticky;
+}
+/* For devices with width less than 450px */
+@media (max-width: 450px) {
+    /* Add your mobile-specific styles here */
+    /* ... */
+ 
+    #genre{
+        font-size: 10px;margin:0px;
+        margin-left: -80px;
+    }
+.white{
+    font-size: 10px;
+    margin-left:-60px;
+}
+#search,.search{
+    height:10px;
+    font-size: 10px;
+    width:39px;
+    right:0px;
+}
+.search{
+    margin-right:30px;
+}
+#go{
+    font-size: 8px;
+    padding:0;
+    border:1px yellow solid;
+    padding:0px 1px;
+}
+.trend{
+    margin-left:-35px;
+}
+.logo{
+    height:45px;
+}
+header{
+    position: relative;
+    box-shadow: 0px 2px 50px rgb(172, 47, 47);
+}
+nav{
+    height:35px;
+}
+.banner {
+    height: 140px;
+}
+
+.banner h2 {
+    font-size: 15px;
+    margin: 0;
+    z-index: 10;
+    margin-left: 20px;
+
+}
+.movies__header h2{
+    font-size: 15px;
+    margin: 0;
+    z-index: 10;
+    margin: 5px 0px 3px 3px;
+}
+.banner .banner-buttons {
+    z-index: 10;
+    margin-left: 20px;
+}
+
+.banner .banner-buttons button {
+    font-size: 8px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(109, 109, 110, 0.7);
+    border: none;
+    padding: 4px;
+    border-radius: 4px;
+}
+.banner-description {
+    width: 200px;
+    margin-left: 20px;
+    margin-top: 2px;
+    font-size: 8px;
+}
+#originals,
+#top_rated {
+    height: 120px;
+}
+#trending{
+    height:85px;
+}
+.lang {
+    color: red;
+    height:50px;
+    width: 50px;
+    border: 1px solid white;
+    cursor: pointer;
+}
+.lang h2{
+    font-size: 8px;
+}
+footer{
+    height: 30px;
+    justify-content: center;
+}
+footer .logo{
+    height:30px;
+    width: 50px;
+}
+.love{
+font-size: 7px;
+}
+.love span{
+    color:yellow;
+    font-size: 7px;
+}
+.love span:nth-child(1){
+    color:rgb(255, 0, 43);
+    font-size: 10px;
+}
+.cpyrgts{
+    font-size: 7px;
+}
+.searchIN img{
+    height:150px;
+    width:94px;
+    box-shadow: 0.001px 0.001px 3px 1px rgba(255, 0, 0, 0.747);
+
+}
+}
+
+/* For devices with width between 450px and 750px */
+@media (min-width: 451px) and (max-width: 750px) {
+    /* Add your tablet-specific styles here */
+    /* ... */
+}
+
+/* For devices with width greater than or equal to 920px */
+@media (min-width: 920px) {
+    /* Add your desktop-specific styles here */
+    /* ... */
+}
+
+/* For devices with width less than 750px */
+@media (max-width: 750px) {
+    /* Add your tablet and mobile shared styles here */
+    /* ... */
+}
+
+/* For devices with width less than 920px */
+@media (max-width: 920px) {
+    /* Add your tablet and mobile shared styles here */
+    /* ... */
+}

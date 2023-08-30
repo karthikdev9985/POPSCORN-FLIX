@@ -1,0 +1,222 @@
+<html>
+
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://res.cloudinary.com/dhshw1ohi/image/upload/v1693296228/logo_tu56u8.png" type="image/x-icon">
+    <title>POPCORN FLIX  Movies,Series...</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height">
+
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <a id="logo" href="index.html">
+          <div class="logo">
+          </div>
+        </a>
+        <div class="genre">
+          <button onclick="vis()" id="genre">Genre <i class="fa-solid fa-caret-down"></i> </button>
+        </div>
+        <a class="white">Top Most Attracted Shows</a>
+        <a class="white "></a>
+        <div class="search">
+          <input id="search" type="text" placeholder="Search movies">
+          <button onclick="getSearch()" id="go">Go</button>
+        </div>
+      </nav>
+      <div id="genre-in">
+        <ul>
+          <a class="gen" id="Action">
+            <li>Action</li>
+          </a>
+          <a class="gen" id="Adult">
+            <li>Adult</li>
+          </a>
+          <a class="gen" id="Adventure">
+            <li>Adventure</li>
+          </a>
+          <a class="gen" id="Animation">
+            <li>Animation</li>
+          </a>
+          <a class="gen" id="Biography">
+            <li>Biography</li>
+          </a>
+          <a class="gen" id="Comedy">
+            <li>Comedy</li>
+          </a>
+          <a class="gen" id="Crime">
+            <li>Crime</li>
+          </a>
+          <a class="gen" id="Documentary">
+            <li>Documentary</li>
+          </a>
+          <a class="gen" id="Drama">
+            <li>Drama</li>
+          </a>
+          <a class="gen" id="Family">
+            <li>Family</li>
+          </a>
+          <a class="gen" id="Fantasy">
+            <li>Fantasy</li>
+          </a>
+          <a class="gen" id="Film">
+            <li>Film-Noir</li>
+          </a>
+          <a class="gen" id="Game">
+            <li>Game-Show</li>
+          </a>
+          <a class="gen" id="History">
+            <li>History</li>
+          </a>
+          <a class="gen" id="Horror">
+            <li>Horror</li>
+          </a>
+          <a class="gen" id=" Music">
+            <li> Music</li>
+          </a>
+          <a class="gen" id=" Musical">
+            <li> Musical</li>
+          </a>
+          <a class="gen" id=" Mystery">
+            <li> Mystery</li>
+          </a>
+          <a class="gen" id="News">
+            <li>News</li>
+          </a>
+          <a class="gen" id=" Reality-TV">
+            <li> Reality-TV</li>
+          </a>
+          <a class="gen" id=" Romance">
+            <li> Romance</li>
+          </a>
+          <a class="gen" id="Sci-Fi">
+            <li>Sci-Fi </li>
+          </a>
+          <a class="gen" id="Short">
+            <li>Short</li>
+          </a>
+          <a class="gen" id="Sport">
+            <li>Sport</li>
+          </a>
+          <a class="gen" id="Talk-Show">
+            <li>Talk-Show </li>
+          </a>
+          <a class="gen" id="Thriller">
+            <li>Thriller</li>
+          </a>
+          <a class="gen" id="War">
+            <li>War</li>
+          </a>
+          <a class="gen" id="Western">
+            <li>Western</li>
+          </a>
+        </ul>
+      </div>
+    </header>
+    <main class="search-cont">
+      <div class="searchIN">
+      </div>
+    </main>
+    <div id="main">
+      <div class="banner">
+        <h2>The Avengers</h2>
+        <div class="banner-buttons">
+          <button class="button-play"><i class="fas fa-play"></i> Play</button>
+          <button><i class="fa-solid fa-plus"></i> My List</button>
+        </div>
+        <div class="banner-description">
+          Earth's mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from enslaving humanity.
+        </div>
+      </div>
+      <div class="originals">
+        <div class="movies__header">
+          <h2>you Most watched</h2>
+        </div>
+        <div>
+          <div id="originals" class="original__movies">
+            <!-- Orignal Movies List Here -->
+          </div>
+        </div>
+      </div>
+      <div class="movies">
+        <div class="movies__header">
+          <h2></h2>
+        </div>
+        <div id="Going" class="movies-cont">
+          <!-- Going Movies List Here -->
+        </div>
+        <div class="movies__header">
+          <h2>Select by Language</h2>
+        </div>
+        <div class="browlang">
+          <div class="lang">
+            <div class="lang" id="tel"></div>
+            <span>
+              <h2>Telugu</h2>
+            </span>
+          </div>
+          <div class="lang" id="">
+            <div class="lang" id="hin">
+
+            </div>
+            <span>
+              <h2>Hindi</h2>
+            </span>
+          </div>
+          <div class="lang">
+            <div class="lang" id="tam">
+
+            </div>
+            <span>
+              <h2>Tamil</h2>
+            </span>
+          </div>
+          <div class="lang">
+            <div class="lang" id="mal">
+
+            </div>
+            <span>
+              <h2>Malayalam</h2>
+            </span>
+
+          </div>
+          <div class="lang">
+            <div class="lang" id="eng">
+
+            </div>
+            <span>
+              <h2>English</h2>
+            </span>
+
+          </div>
+
+        </div>
+
+        <div class="movies__header">
+          <h2>Top Most Attracted</h2>
+        </div>
+        <div id="top_rated" class="movies-cont">
+          <!-- Most Attracted Movies List Here -->
+        </div>
+      </div>
+    </div>
+
+    </div>
+    <dialog id="modal" class="modal">
+      <div id="ifra">
+        <iframe src="" allow="autoplay" allowfullscreen height="400" width="800" id="movieTrailer"></iframe>
+      </div>
+      <div id="x">&times;</div>
+    </dialog>
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/e38682e3fe.js" crossorigin="anonymous"></script>
+  </body>
+<footer>
+  <div class="logo"></div>
+  <div class="love">Made with <span>&hearts;</span> by <span>karthik</span> &nbsp;&nbsp;</div>
+  <div class="cpyrgts">&copy; All Rights Reserved</div>
+</footer>
+</html>
